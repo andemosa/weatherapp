@@ -1,0 +1,24 @@
+{
+  "name": "Smash It Weather App",
+  "short_name": "Weather App",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#4357AF",
+  "background_color": "#4357AF",
+  "icons": [
+    {
+      "src": "images/icon-128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512"
+    }
+  ]
+}

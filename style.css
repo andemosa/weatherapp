@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", "Gotham Rounded", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: linear-gradient(to right, rgb(35, 156, 255), rgb(67, 87, 175));
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  margin: 2em 0 1em;
+  color: rgb(34, 29, 29);
+}
+
+.container {
+  max-width: 800px;
+  width: 80%;
+  background-color: rgb(252, 247, 247);
+  box-shadow: 0 5px 10px black;
+  border-radius: 5px;
+  margin: 0 auto 2em;
+}
+
+.content {
+  padding: 2em;
+  margin-top: 3em;
+}
+
+.header {
+  background-color: rgb(87, 78, 78);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.banner {
+  align-content: center;
+  display: none;
+  justify-content: center;
+  width: 100%;
+}
+span {
+  font-size: 1rem;
+  color: black;
+}
+.day {
+  margin: 1em 0;
+}
+.icon-container {
+  position: relative;
+  top: 70px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.general-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.status {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(67, 87, 175);
+}
+
+.location {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.detail-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.detail.bordered {
+  border-left: 1px solid #777;
+  border-right: 1px solid #777;
+}
+
+.detail .title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.detail .value {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+.city-search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.city-search {
+  margin-top: 10px;
+  font-size: 2rem;
+  outline: none;
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 100%;
+}
+label {
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+.default {
+  font-size: 0.8rem;
+  width: 70%;
+  margin: 1em auto;
+  max-width: 200px;
+  padding: 0.5em;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+/* Media Queries */
+
+@media (max-width: 820px) {
+  .status {
+    margin-bottom: 0.5em;
+  }
+  .detail {
+    padding: 10px;
+  }
+  .detail .value {
+    margin-top: 10px;
+  }
+  .detail-section {
+    flex-direction: column;
+    margin: 1em;
+  }
+  .detail.bordered {
+    border-left: none;
+    border-right: none;
+  }
+  .city-search {
+    font-size: 1.5rem;
+  }
+}
